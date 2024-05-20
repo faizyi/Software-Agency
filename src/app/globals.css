@@ -3,11 +3,6 @@
 @tailwind components;
 @tailwind utilities;
  
-body{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
 /* Team Section Css */
 .card-hover {
   position: relative;
