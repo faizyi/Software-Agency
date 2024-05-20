@@ -1,0 +1,106 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Team Section Css */
+.card-hover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card-hover:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.card-hover img {
+  border-radius: 10px; /* Match image corners to card corners */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card-hover:hover img {
+  opacity: 0.3;
+}
+
+.card-hover .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2); /* Darken overlay for better readability */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  padding: 20px; /* Add padding for text */
+  border-radius: 10px; /* Match overlay corners to card corners */
+}
+
+.card-hover:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-hover .card-overlay h5,
+.card-hover .card-overlay p {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card-hover .card-overlay h5 {
+  font-size: 1.25rem; /* Increase font size for name */
+  margin-bottom: 0.5rem; /* Add space below name */
+}
+
+.card-hover .card-overlay p {
+  font-size: 1rem; /* Set font size for role */
+}
+
+
+
+
+/* WorkSection.module.css */
+.work-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.cardBody {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  margin-left: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: fadeInUp 0.5s forwards;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: rotateY(10deg) scale(1.05);
+  opacity: 0.8;
+}
+
+.card:hover .cardBody {
+  opacity: 1;
+}
+
+

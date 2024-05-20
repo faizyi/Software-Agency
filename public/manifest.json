@@ -1,0 +1,17 @@
+{
+    "name": "NextGen Solutions",
+    "short_name": "NG S",
+    "icons": [
+        {
+            "src": "/next.svg",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+}
